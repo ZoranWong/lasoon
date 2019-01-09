@@ -1,0 +1,5 @@
+/* required by usingComponents */
+.body {
+    width: 750rpx;
+    background-color: #F0F0F0;
+}

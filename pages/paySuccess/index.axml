@@ -1,0 +1,7 @@
+<view class = "body">
+  <message
+    title="支付成功"
+    subTitle="您可以在我的订单中随时查看订单情况"
+    type="success">
+  </message>
+</view>

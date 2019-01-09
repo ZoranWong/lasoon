@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "支付成功",
+  "usingComponents": {
+    "message": "mini-antui/es/message/index"
+  }
+}

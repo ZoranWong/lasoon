@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/pay/index",
+    "pages/paySuccess/index"
+  ],
+  "window": {
+    "defaultTitle": "自助买单"
+  }
+}

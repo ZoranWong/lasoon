@@ -1,0 +1,30 @@
+<view class = "body">
+    <view class = "payment-box">
+        <view class = "header">
+            <view class = "left">
+                <view class = "title">付款给商家</view>
+                <view class = "merchant-name">名称：{{shopName}}</view>
+            </view>
+            <view class = "right">
+                <view class="logo">
+                    <image src="{{logo}}"/>
+                </view>
+            </view>
+        </view>
+        <view class = "content">
+            <amount-input
+                type="digit"
+                title="金额"
+                placeholder=""
+                value="{{paymentAmount}}"
+                maxLength="5"
+                focus="{{true}}"
+                onClear="onInputClear"
+                onInput="onInput"
+                onConfirm="onInputConfirm" />
+        </view>
+        <view class = "footer">
+            <button type="primary" onTap = "pay" >立即支付</button>
+        </view>
+    </view>
+</view>
