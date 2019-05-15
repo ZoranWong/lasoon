@@ -38,10 +38,10 @@ Page({
             my.tradePay({
                 tradeNO: result['trade_no'],
                 success: function(res) {
-                    console.log(res);
-                    if (res.resultCode === 9000) {
+                    console.log('----------- trade pay ----------', res);
+                    if (res.resultCode == 9000) {
                         my.navigateTo({ url: '/pages/paySuccess/index' });
-                    }else if (res.resultCode === 6001) {
+                    }else if (res.resultCode == 6001) {
 
                     }
                 },

@@ -1,0 +1,35 @@
+{
+    "name": "lasoon",
+    "version": "1.0.0",
+    "description": "Payment",
+    "main": "app.js",
+    "dependencies": {
+        "blueimp-md5": "^2.10.0",
+        "gulp-rename": "^1.4.0",
+        "mini-antui": "^0.4.6",
+        "query-string": "^6.2.0",
+        "underscore": "^1.9.1"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "del": "^4.1.1"
+    },
+    "scripts": {
+        "test": "test",
+        "dev": "gulp dev",
+        "prod": "gulp prod"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZoranWong/lasoon.git"
+    },
+    "keywords": [
+        "paymen"
+    ],
+    "author": "Zoran Wong",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ZoranWong/lasoon/issues"
+    },
+    "homepage": "https://github.com/ZoranWong/lasoon#readme"
+}

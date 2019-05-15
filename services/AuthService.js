@@ -24,7 +24,8 @@ export default class PaymentService extends ApiService {
                     let data = await this.get(`/ali/login/${res.authCode}`, {access_token: accessToken});
                     return resolve(data);
                 },
-                fail: () => {
+                fail: (res) => {
+                    console.log(res);
                     return resolve(false);
                 }
             });
