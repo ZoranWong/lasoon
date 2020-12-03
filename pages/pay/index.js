@@ -9,7 +9,8 @@ Page({
         logo: null,
         shopName: null,
         adress: null,
-        mobile: null
+        mobile: null,
+        sologan: ''
     },
     async init() {
         console.log('data info', this.data);
@@ -92,6 +93,10 @@ Page({
                 storeId: parseInt(app.globalData.storeId)
             });
         }
+
+        this.setData({
+            sologan: app.globalData.config.pages.pay.sologan
+        });
 
         this.init();
     },

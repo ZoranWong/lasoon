@@ -1,5 +1,5 @@
 {
-  "defaultTitle": "自助买单",
+  "defaultTitle": "买单",
   "usingComponents": {
     "amount-input": "mini-antui/es/amount-input/index"
   }
