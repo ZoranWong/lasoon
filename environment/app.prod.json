@@ -1,5 +1,16 @@
 {
     "appId": "kdy5ccd661e38a97",
     "appSecret": "EVYgbcyNcGxippqsJLBz5OAnbW2GhQ5N",
-    "gateway": "https://api.mp.kingdomcloud.cn"
+    "gateway": "https://api.mp.kingdomcloud.cn",
+    "paySuccess": "福年来扫码付支付成功",
+    "pages": {
+        "pay": {
+            "title": "快乐松扫码付",
+            "sologan": "美好的一天从早餐开始！"
+        },
+        "paySuccess": {
+            "title": "快乐松支付成功",
+            "sologan": "快乐松自助买单"
+        }
+    }
 }

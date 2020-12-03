@@ -13,5 +13,10 @@ Page({
   },
   goBack() {
     my.navigateBack();
+  },
+  onShow(){
+      let app = getApp();
+      console.log(app.globalData.config.paySuccess);
+      this.setData({subTitle: app.globalData.config.paySuccess});
   }
 });

@@ -97,3 +97,8 @@
     height: 90rpx;
     width: 626rpx;
 }
+.sologan{
+    margin: 96rpx;
+    text-align: center;
+    font-size: 36rpx;
+}

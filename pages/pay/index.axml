@@ -27,4 +27,5 @@
             <button type="primary" onTap = "pay" >立即支付</button>
         </view>
     </view>
+    <view class="sologan">{{sologan}}</view>
 </view>

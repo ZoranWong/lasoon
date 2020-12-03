@@ -1,5 +1,16 @@
 {
     "appId": "2018090423350000",
     "appSecret": "2b785c803642f13c4759352847ab0b2a",
-    "gateway": "https://api.mp.klsfood.cn"
+    "gateway": "https://api.mp.klsfood.cn",
+    "paySuccess": "快乐松扫码付支付成功",
+    "pages": {
+        "pay": {
+            "title": "快乐松扫码付",
+            "sologan": "快乐松美好生活！"
+        },
+        "paySuccess": {
+            "title": "快乐松支付成功",
+            "sologan": "快乐松自助买单"
+        }
+    }
 }
