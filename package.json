@@ -6,6 +6,7 @@
     "dependencies": {
         "blueimp-md5": "^2.10.0",
         "gulp-rename": "^1.4.0",
+        "md5": "^2.3.0",
         "mini-antui": "^0.4.6",
         "query-string": "^6.2.0",
         "underscore": "^1.9.1"
