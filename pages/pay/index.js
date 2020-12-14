@@ -5,7 +5,8 @@ Page({
     paymentService: null,
     data: {
         paymentAmount: '',
-        storeId: 1,
+        // storeId: 1,
+        storeId:null,
         logo: null,
         shopName: null,
         adress: null,
@@ -55,7 +56,6 @@ Page({
                 },
                 fail: function(res) {
                     my.alert(res.resultCode);
-                    // my.alert(res,"请扫码")
                 },
             });
         }
@@ -66,9 +66,9 @@ Page({
         });
     },
     onInputConfirm() {
-        my.alert({
-            content: 'confirmed',
-        });
+        // my.alert({
+        //     content: '',
+        // });
     },
     onInput(e) {
         const paymentAmount = e.detail.value;
@@ -77,9 +77,9 @@ Page({
         });
     },
     onButtonClick() {
-        my.alert({
-            content: 'button clicked',
-        });
+        // my.alert({
+        //     content: 'button clicked',
+        // });
     },
     onInputFocus() {
 
@@ -99,6 +99,10 @@ Page({
         if (app.globalData.storeId) {
             this.setData({
                 storeId: parseInt(app.globalData.storeId)
+            });
+        }else{
+            my.alert({
+                content: '您还未扫店铺码呢哟',
             });
         }
 

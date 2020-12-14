@@ -24,7 +24,8 @@
                 onConfirm="onInputConfirm" />
         </view>
         <view class = "footer">
-            <button type="primary" onTap = "pay" >立即支付</button>
+            <button type="primary" onTap = "pay" a:if={{storeId}}>立即支付</button>
+            <button type="primary" disabled='true' onTap = "pay" a:else >立即支付</button>
         </view>
     </view>
     <view class="sologan">{{sologan}}</view>
