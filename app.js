@@ -10,16 +10,16 @@ App({
     },
     onLaunch(options) {
         console.log('launch options', options);
-        this.globalData.storeId = 2;
+        this.globalData.storeId = 1706;//2
         if (options['query']) {
             if (options['query']['store_id']) {
                 this.globalData.storeId = options['query']['store_id'];
-                console.log('========++++++++==========');
+                console.log('========+++++111+++==========',this.globalData.storeId);
             } else {
                 let qrCode = options['query']['qrCode'];
                 let arr = qrCode.split('/');
                 this.globalData.storeId = parseInt(arr[arr.length - 1]);
-                console.log('========++++-------++++==========');
+                console.log('========++++----this.globalData.storeId---++++==========',this.globalData.storeId);
             }
         }
     },

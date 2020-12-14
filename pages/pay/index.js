@@ -10,31 +10,38 @@ Page({
         shopName: null,
         adress: null,
         mobile: null,
-        sologan: ''
+        sologan: '',
+        customerId:'',
+        remark:'',
+        coupon_records:[]
+
     },
     async init() {
         console.log('data info', this.data);
         let app = getApp();
         let authService = new AuthService(app.globalData.config.gateway);
+        console.log(authService,'authServiceauthService')
         let data = await authService.accessToken(app.globalData.config.appId, app.globalData.config.appSecret);
         app.globalData.accessToken = data['access_token'];
         app.globalData.contactPhoneNum = data['contact_phone_num'];
         app.globalData.logo = data['logo'];
         this.setData({ logo: data['logo'] });
         let user = await authService.login(data['access_token']);
-        console.log('user info', user);
+        this.setData({customerId:user.customer_id})
         this.paymentService = new PaymentService(app.globalData.config.gateway, user['token']);
         let shopService = new ShopService(app.globalData.config.gateway, user['token']);
-        let shop = await shopService.shop(this.data.storeId);
+        let shop = await shopService.getshop(this.data.storeId);
         console.log('shop info', shop);
         this.setData({ shopName: shop['name'], address: shop['address'] });
     },
     async pay() {
-        console.log(this.data);
+        console.log(this.data,'立即制度');
         if (this.data.paymentAmount > 0) {
-            let order = await this.paymentService.createOrder(this.data.storeId, this.data.paymentAmount,
-                this.data.address, this.data.mobile, this.data.shopName);
-            let result = await this.paymentService.payment(order['id']);
+            // let order = await this.paymentService.createOrder(this.data.storeId, this.data.paymentAmount,
+            //     this.data.address, this.data.mobile, this.data.shopName,this.data.customerId);
+            let order = await this.paymentService.createOrder(this.data.storeId, this.data.paymentAmount,this.data.customerId,this.data.remark,this.data.coupon_records);
+            console.log(order['order_id'],'order');
+            let result = await this.paymentService.payment(order['order_id']);
             console.log('payment sign', result);
             my.tradePay({
                 tradeNO: result['trade_no'],
@@ -48,6 +55,7 @@ Page({
                 },
                 fail: function(res) {
                     my.alert(res.resultCode);
+                    // my.alert(res,"请扫码")
                 },
             });
         }

@@ -1,7 +1,7 @@
 {
-    "appId": "kdy5ccd661e38a97",
-    "appSecret": "EVYgbcyNcGxippqsJLBz5OAnbW2GhQ5N",
-    "gateway": "https://api.mp.kingdomcloud.cn",
+    "appId": "kdy5df6e803b3ea6",
+    "appSecret": "iy2tgGBhSVnVxC0fTXtN0kddYo5wOzza",
+    "gateway": "https://www.neptune.kingdomcloud.cn",
     "paySuccess": "福年来扫码付支付成功",
     "pages": {
         "pay": {

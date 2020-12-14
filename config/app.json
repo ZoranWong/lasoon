@@ -1,12 +1,12 @@
 {
-    "appId": "kdy5ccd661e38a97",
-    "appSecret": "EVYgbcyNcGxippqsJLBz5OAnbW2GhQ5N",
-    "gateway": "https://api.mp.kingdomcloud.cn",
-    "paySuccess": "福年来扫码付支付成功",
+    "appId": "kdy5df6e803b3ea6",
+    "appSecret": "Kw2OEar0aLI8Dyssm1r4zhifSTDDkPuW",
+    "gateway":"http://neptune.klsfood.cn",
+    "paySuccess": "快乐松扫码付支付成功",
     "pages": {
         "pay": {
             "title": "快乐松扫码付",
-            "sologan": "美好的一天从早餐开始！"
+            "sologan": "快乐松美好生活！"
         },
         "paySuccess": {
             "title": "快乐松支付成功",

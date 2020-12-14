@@ -1,7 +1,7 @@
 import ApiService from './ApiService';
 export default class ShopService extends ApiService {
-    async shop(id) {
-        let shop = await this.get(`/store/${id}/info`);
-        return shop;
+    async getshop(shop) {
+        let shops = await this.get(`api/mp/shop/${shop}/info`);
+        return shops;
     }
 }
