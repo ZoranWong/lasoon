@@ -9,7 +9,7 @@
         "md5": "^2.3.0",
         "mini-antui": "^0.4.6",
         "query-string": "^6.2.0",
-        "underscore": "^1.9.1"
+        "underscore": "^1.12.1"
     },
     "devDependencies": {
         "gulp": "^4.0.2",
